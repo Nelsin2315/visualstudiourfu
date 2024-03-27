@@ -54,6 +54,7 @@ int main()
     List lst;//Переменная, тип которой список
 
     std::cout << "N = ";
+    //std::cout <<  = ";
     std::cin >> N;//Указали сколько элементов вводить в список
 
     for (int i = 0; i < N; i++)
@@ -66,6 +67,5 @@ int main()
     lst.Show();//Вывод списка на экран
     std::cin.ignore().get();//Для того, чтобы окно сразу не закрывалось
 
-    //std::cin.ignore().get();
     return 0;
 }
