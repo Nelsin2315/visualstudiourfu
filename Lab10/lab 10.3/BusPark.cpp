@@ -1,5 +1,6 @@
 #include "BusPark.h"
 
+// Определение класса и конструкторов
 BusPark::BusPark()
 {
 	bus_depot = new LinkedList<BusInfo>();

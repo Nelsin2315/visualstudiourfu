@@ -7,25 +7,25 @@ using namespace std;
 int main()
 {
  char fname[15], c;
- cout << "Print name input file: "; cin >> fname;
+ cout << "Напишите имя файла для создания: "; cin >> fname;
  // Открыли входной файл
  ifstream inf;
  inf.open(fname, ios::in);
  if (!inf.is_open()) //Проверяем поток
  {
- cout << "Not open input file " << fname;
+ cout << "Не открывается входной файл " << fname;
  return 0;
  }
  else
  {
- cout << "Print name output file: ";
+ cout << "Имя выходного файла для печати: ";
  cin >> fname;
  //Открытие выходного файла
  ofstream ofs;
  ofs.open(fname, ios::out | ios::trunc);
  if (!ofs.is_open()) //Проверяем поток
  {
- cout << "Not open output file: " << fname;
+ cout << "Не открывается выходной файл: " << fname;
  }
  //Пока не конец файла
  while (!inf.eof())

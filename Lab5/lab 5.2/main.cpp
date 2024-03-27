@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// Функция для подсчёта пустых и непустых символов
 void charcounter(int *empt, int *unempt, char *ch)
 {
 	switch (*ch) {
@@ -42,7 +43,7 @@ int main()
 	in.open(name);	
     char sym;
 
-
+// Считывание символов из файла и подсчёт пустых и непустых символов
 	while (!in.eof())
   {
     in.get(sym); // считать из rf => sym

@@ -5,6 +5,7 @@ using namespace std;
 BusPark* g_bus_park;
 BusInfo* selected_bus = nullptr;
 
+// Управление текстовыми сообщениями 
 #pragma region 
 	#pragma region Ìåíþ_âûõîäà
 		#define EXIT_COMMAND "exit"
@@ -47,6 +48,7 @@ BusInfo* selected_bus = nullptr;
 #pragma endregion
 
 
+// Определение указателя на функцию и прототипы функций для вывода меню
 typedef void (*f_ptr)();
 void print_main_menu();
 void print_exit_menu();
@@ -56,6 +58,7 @@ void print_new_bus_name();
 void print_new_bus_route();
 void print_select_id_menu();
 
+//Определение функции для запроса ввода с консоли
 string ask_to_write(f_ptr printFunction, bool* exit_marker);
 void listen_main_menu();
 void add_new_bus();
